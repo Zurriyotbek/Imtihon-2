@@ -1,12 +1,15 @@
-.header {
-    padding: 22px 0;
-}
+.header {}
 
 .header__container {
-    padding-bottom: 22px;
+    padding: 22px 20px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__hamburger {
+    display: none;
 }
 
 .header__logo {
@@ -25,4 +28,37 @@
 
 .header__btn {
     margin-left: auto;
+}
+
+// RESPONSIVE  TABLET
+@media only screen and (max-width: 670px) {
+    .header__logo {
+        margin: 0;
+        width: 107px;
+    }
+    .header__btn {
+        display: none;
+        margin-left: auto;
+    }
+}
+
+// RESPONSIVE MOBILE
+@media only screen and (max-width: 460px) {
+    .header__container {
+        padding: 15px 20px;
+        align-items: center;
+    }
+    .header__logo {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .header__hamburger {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .header-logo {
+        width: 75.5px;
+    }
 }

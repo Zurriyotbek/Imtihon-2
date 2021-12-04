@@ -34,3 +34,10 @@
 .nav__item a:hover {
     color: $main-color;
 }
+
+// RESPONSIVE TABLET
+@media only screen and (max-width: 460px) {
+    .nav {
+        display: none;
+    }
+}

@@ -1,0 +1,220 @@
+.about__container {
+    padding: 160px 20px 200px;
+    position: relative;
+}
+
+.about__line {
+    position: absolute;
+    width: 974px;
+    height: 15px;
+    background-color: #E5ECF4;
+    left: -130px;
+    top: 208px;
+    z-index: -99999;
+}
+
+.about__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.about__item {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.about__item:first-child {
+    margin-left: 0;
+}
+
+.about__item-line {
+    display: none;
+}
+
+.about__item-img {
+    margin-bottom: 40px;
+}
+
+.about__text-wrapper {
+    margin: 0;
+}
+
+.about__item-heading {
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: $secondary-color;
+}
+
+.about__item-desc {
+    margin: 0;
+    padding: 0;
+    font-family: $text-color;
+    color: $secondary-color;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+// RESPONSIVE TABLET
+@media only screen and (max-width:1106px) {
+    .about__line {
+        left: -220px;
+    }
+}
+
+@media only screen and (max-width:971px) {
+    .about__line {
+        left: -310px;
+    }
+}
+
+@media only screen and (max-width:835px) {
+    .about__line {
+        left: -400px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .about__container {
+        padding: 122px 20px 145px;
+        display: flex;
+        justify-content: center;
+    }
+    .about__line {
+        display: none;
+    }
+    .about__list {
+        margin: 0;
+        padding: 0;
+        width: 573px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about__item {
+        margin-left: 0px;
+        margin-bottom: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .about__item:last-child {
+        margin-bottom: 0;
+    }
+    .about_img-wrapper {
+        position: relative;
+    }
+    .about__item-line {
+        position: absolute;
+        display: inline-block;
+        left: 45%;
+        top: -130%;
+        z-index: -99;
+    }
+    .about__item-img {
+        margin-bottom: 0px;
+        margin: 0;
+    }
+    .about__text-wrapper {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 398px;
+    }
+    .about__item-heading {
+        margin: 0;
+        margin-bottom: 27px;
+        padding: 0;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: $secondary-color;
+    }
+    .about__item-desc {
+        margin: 0;
+        padding: 0;
+        font-family: $secondary-font;
+        color: $secondary-color;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width:563px) {
+    .about__text-wrapper {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    .about__item-line {
+        position: absolute;
+        display: inline-block;
+        left: 45%;
+        top: -130%;
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width:514px) {
+    .about__item {
+        margin-left: 0px;
+        margin-bottom: 48px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .about__text-wrapper {
+        width: 300px;
+    }
+    .about__item-line {
+        top: -170%;
+        height: 650px;
+    }
+}
+
+// RESPONSIVE MOBILE
+@media only screen and (max-width:465px) {
+    .about__container {
+        padding: 120px 20px;
+    }
+    .about__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__item {
+        max-width: 311px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__item-line {
+        display: none;
+    }
+    .about__item-img {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    .about__img-wrapper {
+        margin-bottom: 24px;
+    }
+    .about__text-wrapper {
+        width: 100%;
+    }
+    .about__item-heading {
+        text-align: center;
+    }
+    .about__item-desc {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+}

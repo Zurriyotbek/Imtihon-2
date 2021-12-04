@@ -1,10 +1,13 @@
 .hero {
     margin: 0;
-    padding: 153px 0;
     background-image: url(/images/hero-bg.png);
-    background-size: 1440px 650px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero__container {
+    padding: 153px 20px;
 }
 
 .hero__content {
@@ -47,6 +50,163 @@
     color: $text-color-second;
 }
 
+// RESPONSIVE TABLET
+@media only screen and (max-width:990px) {
+    .hero__content {
+        width: 450x;
+    }
+    .hero__content-bottom-img-2 {
+        position: absolute;
+        max-width: 380px;
+        top: 20%;
+        right: -100%;
+    }
+}
+
+@media only screen and (max-width:940px) {
+    .hero__content-bottom-img-2 {
+        position: absolute;
+        max-width: 340px;
+        top: 20%;
+        right: -90%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .hero__content-bottom-img-2 {
+        position: absolute;
+        max-width: 300px;
+        top: 20%;
+        right: -80%;
+    }
+}
+
+@media only screen and (max-width:860px) {
+    .hero__container {
+        padding: 137px 32px 179px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__content {
+        max-width: 573px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__heading {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .hero__content-bottom {
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__content-bottom-desc {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    .hero__content-bottom-img-1 {
+        display: none;
+    }
+    .hero__content-bottom-img-2 {
+        position: absolute;
+        max-width: 447px;
+        left: -40%;
+        top: 110%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero {
+        background: url(/images/hero-bg-tablet.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .hero__content-bottom-img-2 {
+        left: -50%;
+    }
+}
+
+@media only screen and (max-width:610px) {
+    .hero__content-bottom-img-2 {
+        top: 100%;
+        left: -60%;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .hero__content-bottom-img-2 {
+        left: -60%;
+        top: 100%;
+    }
+}
+
+@media only screen and (max-width:570px) {
+    .hero__content-bottom-img-2 {
+        left: -70%;
+        top: 100%;
+    }
+}
+
+@media only screen and (max-width:515px) {
+    .hero__content-bottom-img-2 {
+        left: -75%;
+        top: 100%;
+    }
+}
+
+@media only screen and (max-width:473px) {
+    .hero__content-bottom-img-2 {
+        left: -85%;
+        top: 90%;
+    }
+    .hero__heading {
+        margin-bottom: 24px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .hero__content-bottom-desc {
+        margin-bottom: 34px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width:424px) {
+    .hero__content-bottom-img-2 {
+        left: -95%;
+        top: 90%;
+    }
+}
+
+@media only screen and (max-width:387px) {
+    .hero__content-bottom-img-2 {
+        left: -115%;
+        top: 90%;
+    }
+}
+
+@media only screen and (max-width:332px) {
+    .hero__content-bottom-img-2 {
+        left: -130%;
+        top: 90%;
+    }
+}
+
+@media only screen and (max-width:302px) {
+    .hero__content-bottom-img-2 {
+        left: -145%;
+        top: 90%;
+    }
+}
+
 // RETINA IMAGES
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and ( min--moz-device-pixel-ratio: 2),
@@ -55,7 +215,27 @@ only screen and ( min-device-pixel-ratio: 2),
 only screen and ( min-resolution: 192dpi),
 only screen and ( min-resolution: 2dppx) {
     /* Retina-specific stuff here */
-    // .hero__container {
-    //     background: url(/images/hero-bg@2x.png);
-    // }
+    .hero {
+        background: url(/images/hero-bg@2x.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    // RESPONSIVE 
+    @media only screen and (max-width: 800px) {
+        .hero {
+            background: url(/images/hero-bg-tablet@2x.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    @media only screen and (max-width: 440px) {
+        .hero {
+            background: url(/images/hero-bg-tablet@2x.png);
+            background-size: cover;
+            background-position: right center;
+            background-repeat: no-repeat;
+        }
+    }
 }
