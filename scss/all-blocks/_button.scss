@@ -1,0 +1,18 @@
+.button {
+    margin: 0;
+    padding: 14px 39px;
+    background-color: $main-color;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: $text-color-second;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: $main-color;
+    background-color: $text-color-second;
+    border: 2px solid $main-color;
+}

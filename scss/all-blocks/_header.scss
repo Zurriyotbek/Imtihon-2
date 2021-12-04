@@ -1,0 +1,28 @@
+.header {
+    padding: 22px 0;
+}
+
+.header__container {
+    padding-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: 58px;
+    width: 107px;
+    transition: all 0.3s ease;
+}
+
+.header__logo:hover {
+    opacity: 0.8;
+}
+
+.header__logo:active {
+    opacity: 0.6;
+}
+
+.header__btn {
+    margin-left: auto;
+}
