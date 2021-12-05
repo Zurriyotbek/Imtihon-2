@@ -1,0 +1,409 @@
+.rounds {
+    position: relative;
+}
+
+.rounds__container {
+    padding-bottom: 329px;
+}
+
+.rounds__content {
+    margin: 0;
+    margin-bottom: 155px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.rounds__content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.rounds__content:last-child {
+    margin-bottom: 0;
+}
+
+.rounds__list {
+    margin: 0;
+    padding: 0;
+    max-width: 445px;
+}
+
+.round-list-1,
+.round-list-3 {
+    margin-right: 20px;
+}
+
+.round-list-2 {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.rounds__heading {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.rounds__desc {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.rounds__img-3 {
+    border-radius: 250px
+}
+
+.rounds-wrap {
+    margin: 0 auto;
+    width: 1440px;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.rounds__oval-1 {
+    position: absolute;
+    right: 0%;
+}
+
+.rounds__arrow-1 {
+    position: absolute;
+    right: 0%;
+    top: 15%;
+}
+
+.rounds__oval-3 {
+    position: absolute;
+    right: 0%;
+}
+
+.rounds__arrow-3 {
+    position: absolute;
+    right: 0%;
+    bottom: 20%;
+}
+
+// RESPONSIVE 
+@media only screen and (max-width:1330px) {
+    .rounds__content {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:1214px) {
+    .rounds__content {
+        width: 93%;
+    }
+}
+
+@media only screen and (max-width:1054px) {
+    .rounds__oval-1 {
+        position: absolute;
+        right: -3%;
+    }
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -10%;
+        top: 15%;
+    }
+    .rounds__oval-3 {
+        right: -3%;
+    }
+    .rounds__arrow-3 {
+        position: absolute;
+        right: 0%;
+        bottom: 20%;
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .rounds__oval-3 {
+        right: -6%;
+    }
+    .rounds__arrow-3 {
+        position: absolute;
+        right: -7%;
+        bottom: 18%;
+    }
+}
+
+@media only screen and (max-width:914px) {
+    .rounds__oval-1 {
+        position: absolute;
+        right: -3%;
+    }
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -20%;
+        top: 15%;
+    }
+    .rounds__oval-3 {
+        right: -9%;
+    }
+    .rounds__arrow-3 {
+        position: absolute;
+        right: -13%;
+        bottom: 16%;
+    }
+}
+
+@media only screen and (max-width:856px) {
+    .rounds__oval-3 {
+        right: -9%;
+    }
+    .rounds__arrow-3 {
+        position: absolute;
+        right: -18%;
+        bottom: 16%;
+    }
+}
+
+@media only screen and (max-width:842px) {
+    .rounds__oval-1 {
+        position: absolute;
+        right: -6%;
+    }
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -25%;
+        top: 15%;
+    }
+    .rounds__arrow-3 {
+        position: absolute;
+        right: -24%;
+        bottom: 16%;
+    }
+}
+
+@media only screen and (max-width:814px) {
+    .rounds__oval-1 {
+        position: absolute;
+        right: -9%;
+    }
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -35%;
+        top: 15%;
+    }
+}
+
+@media only screen and (max-width:787px) {
+    .rounds__oval-1 {
+        position: absolute;
+        right: -15%;
+    }
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -35%;
+        top: 15%;
+    }
+    .rounds__arrow-3 {
+        position: absolute;
+        right: -28%;
+        bottom: 16%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .rounds__oval-1 {
+        position: absolute;
+        top: 0;
+        right: 0%;
+    }
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -5%;
+        top: 11%;
+    }
+    .rounds__oval-3 {
+        right: -9%;
+        bottom: 16%;
+    }
+    .rounds__arrow-3 {
+        position: absolute;
+        right: -25%;
+        bottom: 16%;
+    }
+}
+
+@media only screen and (max-width:667px) {
+    .rounds__oval-1 {
+        position: absolute;
+        top: 0;
+        right: -10%;
+    }
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -10%;
+        top: 11%;
+    }
+}
+
+@media only screen and (max-width:555px) {
+    .rounds__oval-1 {
+        display: none;
+    }
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -10%;
+        top: 8%;
+    }
+    .rounds__oval-3 {
+        display: none;
+    }
+    .rounds__arrow-3 {
+        position: absolute;
+        right: -20%;
+        bottom: 19%;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -10%;
+        top: 13%;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .rounds__arrow-1 {
+        position: absolute;
+        right: -10%;
+        top: 10%;
+    }
+}
+
+// RESPONSIVE TABLET
+@media only screen and (max-width: 768px) {
+    .rounds__container {
+        padding-bottom: 104px;
+    }
+    .rounds__content {
+        margin: 0;
+        margin-bottom: 128px;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .rounds__content:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    .rounds__img-1,
+    .rounds__img-2,
+    .rounds__img-3 {
+        margin-bottom: 56px;
+    }
+    .round-list-1,
+    .round-list-3 {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .round-list-2 {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rounds__heading {
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+        text-align: center;
+    }
+    .rounds__desc {
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        font-family: Lexend Deca;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        text-align: center;
+    }
+}
+
+// RESPONSIVE MOBILE
+@media only screen and (max-width: 380px) {
+    .rounds__container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .rounds__content {
+        margin: 0;
+        margin-bottom: 120px;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 311px;
+    }
+    .rounds__content:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    .rounds__img-1,
+    .rounds__img-2,
+    .rounds__img-3 {
+        margin-bottom: 56px;
+    }
+    .round-list-1,
+    .round-list-3 {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .round-list-2 {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rounds__heading {
+        margin: 0;
+        margin-bottom: 32px;
+        padding: 0;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+        text-align: center;
+    }
+    .rounds__desc {
+        margin: 0;
+        margin-bottom: 32px;
+        padding: 0;
+        font-family: Lexend Deca;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        text-align: center;
+    }
+}
